@@ -44,7 +44,7 @@ use Encode::Detect::Detector;
 
 __PACKAGE__->Define(qw(Detect));
 
-our $VERSION = "0.01";
+our $VERSION = "1.00";
 
 sub perlio_ok { 0 }
 

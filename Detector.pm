@@ -39,7 +39,7 @@ package Encode::Detect::Detector;
 use strict;
 use warnings;
 
-our $VERSION = "0.01";
+our $VERSION = "1.00";
 
 require DynaLoader;
 our @ISA=qw(DynaLoader Exporter);
@@ -57,10 +57,10 @@ Encode::Detect::Detector - Detects the encoding of data
 
 =head1 SYNOPSIS
 
-  use Encoding::Detect::Detector;
+  use Encode::Detect::Detector;
   my $charset = detect($octets);
 
-  my $d = new Encoding::Detect::Detector;
+  my $d = new Encode::Detect::Detector;
   $d->handle($octets);
   $d->handle($more_octets);
   $d->end;
@@ -73,15 +73,15 @@ detector, which detects the charset used to encode data.
 
 =head1 METHODS
 
-=head2 $charset = Encoding::Detect::Detector->detect($octets)
+=head2 $charset = Encode::Detect::Detector->detect($octets)
 
 Detect the charset used to encode the data in $octets and return the
 charset's name.  Returns undef if the charset cannot be determined
 with sufficient confidence.
 
-=head2 $d = Encoding::Detect::Detector->new()
+=head2 $d = Encode::Detect::Detector->new()
 
-Creates a new C<Encoding::Detect::Detector> object and returns it.
+Creates a new C<Encode::Detect::Detector> object and returns it.
 
 =head2 $d->handle($octets)
 

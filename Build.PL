@@ -3,6 +3,10 @@ my $build = Module::Build->new
     (
      module_name => 'Encode::Detect',
      license => 'mozilla',
+     requires => { 'Module::Build' => 0,
+                   'ExtUtils::CBuilder' => 0,
+               },
+     create_makefile_pl => 'passthrough',
      c_source => 'src',
      pm_files => { 'Detect.pm' => 'lib/Encode/Detect.pm',
 		   'Detector.pm' => 'lib/Encode/Detect/Detector.pm',

@@ -5,6 +5,8 @@ Detector.pm
 Detector.xs
 LICENSE
 MANIFEST
+META.yml
+Makefile.PL
 include/nscore.h
 include/prmem.h
 src/Big5Freq.tab
