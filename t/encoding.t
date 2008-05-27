@@ -1,7 +1,6 @@
 use strict;
 use warnings;
 use Test::More qw(no_plan);
-use Data::Dump qw(dump);
 
 BEGIN { use_ok('Encode') }
 

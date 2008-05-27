@@ -39,7 +39,7 @@ package Encode::Detect::Detector;
 use strict;
 use warnings;
 
-our $VERSION = "1.00";
+our $VERSION = "1.01";
 
 require DynaLoader;
 our @ISA=qw(DynaLoader Exporter);

@@ -1,3 +1,7 @@
+1.01
+       - Remove unnecessary use of Data::Dump in test suite
+       - Work around perlbug 39634, where g++ 3.3 doesn't support __attribute__((unused))
+
 1.00
        - Add module dependencies
        - Fix typos in POD documentation
